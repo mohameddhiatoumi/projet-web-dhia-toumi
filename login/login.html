@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>login screen</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> <!-- Font Awesome -->
+  <link rel="stylesheet" href="login.css"> <!-- Link to the CSS file -->
+</head>
+<body>
+  <div class="container">
+   
+
+
+
+    
+    <div class="left-section">
+      
+        <div class="menu">
+            <button id="loginBtn" class="menu-item active"><i class="fas fa-user"></i> Login</button>
+            <button id="registerBtn" class="menu-item"><i class="fas fa-pen"></i> Register</button>
+            
+          </div>
+    </div>
+
+
+
+
+
+   
+    <div class="right-section">
+       
+        <div id="loginForm" class="form-section">
+          <h1>Login Here</h1>
+          <form action="#">
+            <div class="input-group">
+              <i class="fas fa-envelope"></i>
+              <input id="loginEmail" type="email" placeholder="Email" required>
+            </div>
+            <div class="input-group">
+              <i class="fas fa-key"></i>
+              <input id="loginPassword" type="password" placeholder="Password" required>
+            </div>
+            <button  type="submit" class="btn-login">Login</button>
+          </form>
+
+        </div>
+  
+
+
+
+
+        <div id="registerForm" class="form-section" style="display: none;">
+          <h1>Register Here</h1>
+          <form action="#">
+            <div class="input-group">
+              <i class="fas fa-user"></i>
+              <input id="registerUsername"  placeholder="Username" required>
+            </div>
+            <div class="input-group">
+              <i class="fas fa-envelope"></i>
+              <input id="registerEmail" type="email" placeholder="Email" required>
+            </div>
+            <div class="input-group">
+              <i class="fas fa-key"></i>
+              <input  type="password" placeholder="Password" required>
+            </div>
+            <div class="input-group">
+              <i class="fas fa-key"></i>
+              <input id="registerPassword" type="password" placeholder="Confirm Password" required>
+            </div>
+            <button type="submit" class="btn-login">Register</button>
+          </form>
+        </div>
+     
+    </div>
+  
+  </div>
+  
+  <script src="login.js"></script>
+
+</body>
+</html>
